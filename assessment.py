@@ -22,10 +22,6 @@ def all_odd(numbers):
         if number % 2 != 0:
             all_odd_list.append(number)
     return all_odd_list
-        # all_odd_list = []
-        # if number % 2 == 1:
-        #     all_odd_list.append(number)
-        # print all_odd_list
 
 
 def print_indices(items):
@@ -86,7 +82,6 @@ def foods_in_common(foods1, foods2):
     return common_foods
 
 
-
 def every_other_item(items):
     """Return every other item in `items`, starting at first item.
 
@@ -127,7 +122,11 @@ def largest_n_items(items, n):
         [3, 3]
     """
 
-    return []
+    items.sort(reverse=True)
+    if n == 0:
+        print []
+    else:
+        print sorted(items[0:n])
 
 
 #####################################################################
